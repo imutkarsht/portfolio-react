@@ -4,7 +4,7 @@ import BodyRight from './BodyRight';
 
 const Body = () => {
   return (
-    <div className='flex items-center xl:justify-between justify-center xl:pt-20 dark:bg-slate-800 dark:text-white pt-36 flex-wrap-reverse'>
+    <div className='flex items-center xl:justify-between justify-center xl:pt-20 dark:bg-slate-800 dark:text-white lg:pt-36 md:pt-24 sm:pt-20 pt-16 flex-wrap-reverse'>
       <BodyLeft/>
       <BodyRight/>
     </div>

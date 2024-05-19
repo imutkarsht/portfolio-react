@@ -7,7 +7,7 @@ const BodyRight = () => {
     <img
      src="/images/bg2.png"
      alt="profilePhoto"
-     className="xl:w-96 w-60 lg:w-72 border-3 bg-blue-300 rounded-full"
+     className="xl:w-96 w-60 lg:w-72 border-3 bg-blue-300 border-8 dark:border-slate-600 rounded-full"
     />
    </div>
   </div>
