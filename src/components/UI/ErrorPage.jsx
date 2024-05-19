@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom"
-import Header from "./Header";
+import Header from "../Header/Header";
 import { MdOutlineLinkOff } from "react-icons/md";
 import { Link } from "react-router-dom";
 const ErrorPage = () =>{

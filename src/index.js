@@ -5,9 +5,9 @@ import Layout from './components/Layout';
 import Body from './components/home/Body';
 import Education from './components/Education-page/Education';
 import Skills from './components/Skill-page/Skills';
-import Projects from './components/Projects';
+import Projects from './components/Project-page/Projects';
 import Contact from './components/Contact';
-import ErrorPage from './components/ErrorPage';
+import ErrorPage from './components/UI/ErrorPage';
 import "./index.css";
 import "./global.css"
 const router = createBrowserRouter([

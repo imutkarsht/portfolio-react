@@ -1,35 +1,7 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { IoMail } from 'react-icons/io5';
-import Button from '../Button';
+import Button from '../UI/Button';
 import { Link } from 'react-router-dom';
-
-const socialLinks = [
-  {
-    id:"1",
-    name: "LinkedIn",
-    link:"https://www.linkedin.com/in/imutkarsht/",
-    icon:FaLinkedin
-  },
-  {
-    id:"2",
-    name: "Github",
-    link:"https://www.github.com/imutkarsht/",
-    icon:FaGithub
-  },
-  {
-    id:"3",
-    name: "Instagram",
-    link:"https://www.instagram.com/im_ut_2308/",
-    icon:FaInstagram
-  },
-  {
-    id:"4",
-    name: "Gmail",
-    link:"mailto:uktiwari023@gmail.com",
-    icon:IoMail
-  },
-]
+import { socialLinks } from '../../utils/mockData';
 
 const BodyLeft = () => {
   return (
@@ -47,7 +19,9 @@ const BodyLeft = () => {
               )
             })}
           </ul>
+        <Link to={"https://drive.google.com/file/d/1EUCHEGq1WY4r0iZa21SWHPLYbD8xn0i6/view"} target='_blank'>
          <Button title="Resume" />
+        </Link>
         </div>
       </div>
   )

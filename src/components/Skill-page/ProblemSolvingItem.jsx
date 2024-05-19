@@ -1,25 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { LEET_URL } from '../../utils/constants';
-import { SiLeetcode } from 'react-icons/si';
-import { FaHackerrank } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { ProbSolv } from '../../utils/mockData';
 
-const ProbSolv = [
-    {
-        id: "1",
-        name: "Leetcode",
-        icon: SiLeetcode,
-        data: ["","has over 100 days streak", "Uses C++ as main language"],
-        link:"https:leetcode.com/imutkarsht"
-    },
-    {
-        id: "2",
-        name: "Hackerrank",
-        icon: FaHackerrank,
-        data: ["5* in C++", "3* in Problem Solving", "3* in Python"],
-        link:"https://www.hackerrank.com/profile/uktiwari023"
-    }
-];
 
 const ProblemSolvingItem = () => {
     const [totalSolved, setTotalSolved] = useState(0);

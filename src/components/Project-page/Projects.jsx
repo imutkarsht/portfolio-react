@@ -1,5 +1,4 @@
 import React from 'react'
-import HeadText from './HeadText'
 import ProjectTop from './ProjectTop';
 import ProjectCard from './ProjectCard';
 

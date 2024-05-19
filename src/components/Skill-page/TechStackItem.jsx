@@ -1,5 +1,5 @@
 import React from 'react';
-import { TechStack } from '../../utils/constants';
+import { TechStack } from '../../utils/mockData';
 
 const TechStackItem = () => {
     return (
