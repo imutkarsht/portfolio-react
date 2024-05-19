@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ErrorPage from './components/ErrorPage';
 import "./index.css";
-
+import "./global.css"
 const router = createBrowserRouter([
   {
     path: "/",

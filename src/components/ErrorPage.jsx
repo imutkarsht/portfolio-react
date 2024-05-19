@@ -7,7 +7,7 @@ const ErrorPage = () =>{
     return (
         <>
             <Header />
-            <div className="flex flex-col fl items-center  h-[calc(100vh-4rem)] dark:bg-slate-800 justify-center p-5">
+            <div className="flex flex-col fl items-center  h-[calc(100vh-4rem)] dark:bg-primary-2 bg-primary-1 justify-center p-5">
                 <MdOutlineLinkOff size={200} className="dark:text-white" />
                 <h2 className="md:text-xl text-lg dark:text-white">Oops! Look Like I forgot to code that page</h2>
                 <p  className="flex items-center text-3xl dark:text-white justify-between  mt-3">

@@ -5,9 +5,8 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
-    <div>
-      <HeadText heading="Projects" />
-      <div className='flex flex-col items-center justify-center gap-2 mt-10 p-4 dark:bg-slate-900' 
+    <div className='mt-2 mb-2'>
+      <div className='flex flex-col items-center justify-center gap-2 mt-3 p-4 ' 
            style={{marginLeft:"5%",marginRight:"5%"}}
       >
         <ProjectTop />

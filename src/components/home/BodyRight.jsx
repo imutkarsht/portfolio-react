@@ -7,7 +7,8 @@ const BodyRight = () => {
     <img
      src="/images/bg2.png"
      alt="profilePhoto"
-     className="xl:w-96 w-60 lg:w-72 border-3 bg-blue-300 border-8 dark:border-slate-600 rounded-full"
+     className="xl:w-96 w-60 lg:w-72 border-3 border-8 dark:border-secondary-2 border-secondary-1 rounded-full"
+     style={{ backgroundImage: "radial-gradient(circle, rgb(255, 2, 150) 0%, rgb(0, 234, 255) 100%)" }}
     />
    </div>
   </div>

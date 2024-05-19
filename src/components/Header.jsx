@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-2 dark:bg-slate-900 bg-slate-300 dark:text-white text-black py-3">
+      <div className="flex items-center justify-between px-2 dark:bg-primary-2  dark:text-white text-black bg-primary-1 py-3">
         <h1 className="md:text-4xl text-2xl uppercase font-semibold">Utkarsh Tiwari</h1>
         <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes size={40} /> : <RiMenu2Fill size={40} />}
@@ -37,10 +37,11 @@ const Header = () => {
           <MenuItems />
         </ul>
       </div>
+      <div className='w-full h-0.5 dark:bg-white bg-black'></div>
 
       
       <div
-        className={`fixed top-16 right-0 h-[calc(100%-4rem)] w-3/6 bg-slate-300 dark:bg-slate-900 bg-opacity-95 dark:bg-opacity-95 text-black z-20 border-t-black dark:border-t-white transform ${
+        className={`fixed top-16 right-0 h-[calc(100%-4rem)] w-3/6 bg-primary-1 dark:bg-primary-2 bg-opacity-95 dark:bg-opacity-95 text-black z-20 transform ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >

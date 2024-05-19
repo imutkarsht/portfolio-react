@@ -8,7 +8,7 @@ const ProjectTop = () => {
           <div className='flex items-center justify-center gap-1'>
             <input type="text" 
               placeholder='search for projects'
-              className='flex items-center justify-start py-2 px-2 rounded-md md:text-xl text-base'
+              className='flex items-center dark:bg-secondary-1 bg-secondary-2 placeholder:text-content-main-text-2 placeholder:dark:text-content-main-text-1 justify-start py-2 px-2 rounded-md md:text-xl text-base'
             />
             <FaSearch 
               size={42}

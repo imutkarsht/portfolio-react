@@ -4,7 +4,7 @@ import HeadText from '../HeadText'
 
 const Education = () => {
   return (
-    <div className='flex flex-col gap-10'>
+    <div className='flex flex-col mt-5 gap-10'>
         <HeadText heading="Education" />
         <div className='flex flex-col flex-wrap gap-1 w-full items-center justify-center'>
           <EducationCard/>
