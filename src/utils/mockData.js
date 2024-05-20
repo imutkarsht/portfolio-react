@@ -128,22 +128,46 @@ export const projects = [
     {
         id: "1",
         name: "Amazon UI clone",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        description: "Basic UI clone of Amazon website using HTML, SASS and JS.",
         type: "minor",
-        imgSrc: "../../images/AUI.png"
+        imgSrc: "../../images/AUI.png",
+        codeLink: "https://github.com/imutkarsht/AMAZON-CLONE",
+        demoLink: "https://imutkarsht.github.io/AMAZON-CLONE/"
     },
     {
         id: "2",
         name: "Basic Dom Projects",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        description: "Collection of small projects built using basic javaScript concpets",
         type: "minor",
-        imgSrc: "../../images/bdp.png"
+        imgSrc: "../../images/bdp.png",
+        codeLink: "https://github.com/imutkarsht/BASIC-DOM-PROJECTS",
+        demoLink: "https://imutkarsht.github.io/BASIC-DOM-PROJECTS/"
     },
     {
         id: "3",
         name: "Technokratos EMS",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        description: "Group Project - Full stack event management system app.",
         type: "major",
-        imgSrc: "../../images/techems.png"
+        imgSrc: "../../images/techems.png",
+        codeLink: "/notAvaliable",
+        demoLink: "https://technokratos-ems.vercel.app"
+    },
+    {
+        id: "4",
+        name: "Note Keep App",
+        description: "Basic note taking app where you can create notes and delete them.",
+        type: "minor",
+        imgSrc: "../../images/nka.jpg",
+        codeLink: "/notAvaliable",
+        demoLink: "https://note-keep-react.vercel.app/"
+    },
+    {
+        id: "5",
+        name: "Food App",
+        description: "Ongoing food app project using React JS and Swiggy API.",
+        type: "major",
+        imgSrc: "../../images/fa.jpg",
+        codeLink: "/notAvaliable",
+        demoLink: "https://imutkarsht-food-app.vercel.app/"
     },
 ]
