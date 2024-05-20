@@ -2,7 +2,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt  } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { SiC, SiCplusplus } from "react-icons/si";
+import { SiC, SiCplusplus, SiSass } from "react-icons/si";
 import { SiLeetcode } from 'react-icons/si';
 import { FaHackerrank } from "react-icons/fa";
 import { IoMail } from 'react-icons/io5';
@@ -56,19 +56,25 @@ export const TechStack = [
         name: "MySql",
         id: "7",
         icon: GrMysql,
-        accent:"black"
+        accent:"yellow"
     },
     {
         name: "C++",
         id: "8",
         icon: SiCplusplus,
-        accent:"black"
+        accent:"blue"
     },
     {
         name: "C",
         id: "9",
         icon: SiC,
-        accent:"black"
+        accent:"blue"
+    },
+    {
+        name: "SASS",
+        id: "10",
+        icon: SiSass,
+        accent:"pink"
     },
 ];
 
@@ -78,14 +84,16 @@ export const ProbSolv = [
         name: "Leetcode",
         icon: SiLeetcode,
         data: ["","has over 100 days streak", "Uses C++ as main language"],
-        link:"https://www.leetcode.com/imutkarsht"
+        link:"https://www.leetcode.com/imutkarsht",
+        accent: "orange"
     },
     {
         id: "2",
         name: "Hackerrank",
         icon: FaHackerrank,
         data: ["5* in C++", "3* in Problem Solving", "3* in Python"],
-        link:"https://www.hackerrank.com/profile/uktiwari023"
+        link:"https://www.hackerrank.com/profile/uktiwari023",
+        accent:"green"
     }
 ];
 

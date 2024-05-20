@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const MenuItems = ({ onClick, currentPath }) => {
     const getMenuItemClass = (path) => {
       const baseClass = "nav-item after:bg-accent-1 dark:after:bg-accent-2 dark:text-white transition-all duration-200 ease-in-out py-1 rounded-sm px-3";
-      const activeClass = "bg-accent-1 dark:bg-accent-2 text-gray-950 dark:text-gray-950"; 
+      const activeClass = "bg-secondary-1 dark:bg-secondary-2 text-black"; 
       return currentPath === path ? `${baseClass} ${activeClass}` : baseClass;
     };
   

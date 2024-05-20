@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="w-full max-w-2xl">
         <HeadText heading="Contact" />
         <form 
-          className='flex flex-col mt-10 gap-6 items-center bg-content-1 dark:bg-content-2 p-6 rounded-lg shadow-lg'
+          className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 border-2 border-black dark:border-white dark:bg-content-2 p-6 rounded-lg shadow-lg'
         >
           <div className='flex flex-col gap-2 items-start w-full'>
             <label htmlFor="name" className='dark:text-white text-lg'>

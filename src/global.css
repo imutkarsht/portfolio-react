@@ -25,3 +25,28 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.hover-shadow-blue:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 123, 255, 0.4); /* Example blue shadow */
+}
+.hover-shadow-yellow:hover {
+  box-shadow: 0 4px 14px 0 rgba(255, 193, 7, 0.4); /* Example yellow shadow */
+}
+.hover-shadow-orange:hover {
+  box-shadow: 0 4px 14px 0 rgba(255, 87, 34, 0.4); /* Example orange shadow */
+}
+.hover-shadow-black:hover {
+  box-shadow: 0 4px 14px 0 rgba(33, 33, 33, 0.4); /* Example black shadow */
+}
+.hover-shadow-pink:hover {
+  box-shadow: 0 4px 14px 0 rgba(236, 72, 153, 0.4); /* Example pink shadow */
+}
+.hover-shadow-green:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 128, 0, 0.4); /* Example green shadow */
+}
+.hover-border-orange:hover {
+  border-color: rgba(255, 87, 34, 1); /* Example orange border */
+}
+.hover-border-green:hover {
+  border-color: rgba(0, 128, 0, 1); /* Example green border */
+}

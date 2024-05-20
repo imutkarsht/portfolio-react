@@ -5,7 +5,7 @@ import Header from './Header/Header';
 
 const Layout = () => {
   return (
-    <div className='flex flex-col min-h-screen dark:bg-primary-2 bg-primary-1 dark:text-font-1 text-black'>
+    <div className='flex flex-col min-h-screen bg-gradient-to-b from-primary-1 to-secondary-1 dark:from-primary-2 dark:to-secondary-2 dark:text-font-1 text-black'>
       <Header />
       <Outlet />
       <Footer />

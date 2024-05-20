@@ -29,7 +29,7 @@ const ProjectCard = () => {
         <div className='flex items-center justify-center md:gap-6 gap-4 mt-8 flex-wrap'>
             {projects.map((item) => {
                 return (
-                    <div key={item.id} className='flex flex-col p-4 w-72 transition-all duration-200 ease-in-out dark:bg-content-2 border-2 border-gray-300 dark:border-gray-700 bg-white dark:text-white rounded-lg hover:shadow-lg'>
+                    <div key={item.id} className='flex flex-col p-4 w-72 transition-all duration-200 ease-in-out bg-opacity-50 dark:bg-opacity-50 dark:bg-content-2 border-2 border-black dark:border-white bg-white dark:text-white rounded-lg hover:shadow-lg'>
                         <img
                             width={1000}
                             height={562}
