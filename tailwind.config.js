@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const gradients = require('tailwindcss-gradients');
 
 module.exports = {
   content: [
@@ -9,11 +8,11 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          1: '#e3edfa',
+          1: "#F4F9F9",
           2: '#222831',
         },
         secondary: {
-          1: '#c5cfdc',
+          1: '#C7C8CC',
           2: '#3a414e',
         },
         accent: {
@@ -29,7 +28,7 @@ module.exports = {
           2: 'white',
         },
         content: {
-          1: '#ffffff',
+          1: '#BBBFCA',
           2: '#1f242a',
           'main-text-1': '#222',
           'main-text-2': '#fff',
@@ -48,8 +47,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    gradients,
-  ],
+  plugins: [],
+  darkMode:'class'
 }
 

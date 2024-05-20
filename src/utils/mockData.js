@@ -123,4 +123,27 @@ export const socialLinks = [
       icon:IoMail
     },
   ]
-  
+
+export const projects = [
+    {
+        id: "1",
+        name: "Amazon UI clone",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        type: "minor",
+        imgSrc: "../../images/AUI.png"
+    },
+    {
+        id: "2",
+        name: "Basic Dom Projects",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        type: "minor",
+        imgSrc: "../../images/bdp.png"
+    },
+    {
+        id: "3",
+        name: "Technokratos EMS",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
+        type: "major",
+        imgSrc: "../../images/techems.png"
+    },
+]

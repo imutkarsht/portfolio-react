@@ -1,35 +1,13 @@
 import React from 'react'
+import { projects } from '../../utils/mockData'
 
-const projects = [
-    {
-        id: "1",
-        name: "Amazon UI clone",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
-        type: "minor",
-        imgSrc: "../../images/AUI.png"
-    },
-    {
-        id: "2",
-        name: "Basic Dom Projects",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
-        type: "minor",
-        imgSrc: "../../images/bdp.png"
-    },
-    {
-        id: "3",
-        name: "Technokratos EMS",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque saepe repellat corporis dolorum delectus at, modi natus ad eos debitis reiciendis. Ea?",
-        type: "major",
-        imgSrc: "../../images/techems.png"
-    },
-]
 
 const ProjectCard = () => {
     return (
         <div className='flex items-center justify-center md:gap-6 gap-4 mt-8 flex-wrap'>
             {projects.map((item) => {
                 return (
-                    <div key={item.id} className='flex flex-col p-4 w-72 transition-all duration-200 ease-in-out bg-opacity-50 dark:bg-opacity-50 dark:bg-content-2 border-2 border-black dark:border-white bg-white dark:text-white rounded-lg hover:shadow-lg'>
+                    <div key={item.id} className='flex flex-col p-4 w-72 transition-all duration-200 ease-in-out bg-opacity-30 dark:bg-opacity-50 dark:bg-content-2 border border-black dark:border-white bg-white dark:text-white rounded-lg hover:shadow-lg'>
                         <img
                             width={1000}
                             height={562}

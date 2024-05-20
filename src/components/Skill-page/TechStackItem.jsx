@@ -28,7 +28,7 @@ const TechStackItem = () => {
                 return (
                     <div
                         key={item.id}
-                        className={`flex flex-col md:m-4 m-1 border-2 bg-opacity-50 dark:bg-opacity-50 border-content-main-text-1 dark:border-content-main-text-2 rounded-lg transition-all ease-in-out duration-150 cursor-pointer items-center justify-center dark:bg-content-2 bg-content-1 hover:shadow-lg hover:dark:shadow-content-main-text-2 hover:shadow-content-main-text-1 ${shadowClass}`}
+                        className={`flex flex-col md:m-4 m-1 border bg-opacity-30 dark:bg-opacity-50 border-content-main-text-1 dark:border-content-main-text-2 rounded-lg transition-all ease-in-out duration-150 cursor-pointer items-center justify-center dark:bg-content-2 bg-content-1 hover:shadow-lg hover:dark:shadow-content-main-text-2 hover:shadow-content-main-text-1 ${shadowClass}`}
                     >
                         <IconComponent size={80} className='dark:text-white p-2 pb-1' />
                         <div className='w-full h-0.5 dark:bg-gray-300 bg-gray-900'></div>

@@ -9,7 +9,9 @@ import Projects from './components/Project-page/Projects';
 import Contact from './components/Contact';
 import ErrorPage from './components/UI/ErrorPage';
 import "./index.css";
-import "./global.css"
+import "./global.css";
+import { ThemeProvider } from './ThemeContext';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +30,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
