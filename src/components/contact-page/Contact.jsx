@@ -46,7 +46,7 @@ const Contact = () => {
         <HeadText heading="Contact" />
         <form 
           onSubmit={handleSubmit}
-          className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 border-2 border-black dark:border-white dark:bg-content-2 p-6 rounded-lg shadow-lg'
+          className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2 p-6 rounded-lg shadow-lg'
         >
           <InputField 
             label="Name" 

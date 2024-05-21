@@ -36,7 +36,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`fixed top-14 right-0 h-[calc(100%-3.5rem)] w-3/6 bg-gradient-to-b from-primary-1 to-secondary-1 dark:from-primary-2 dark:to-secondary-2 bg-opacity-60 dark:bg-opacity-60 text-black z-20 transform ${
+        className={`fixed top-14 right-0 h-[calc(100%-3.5rem)] w-3/6 bg-gradient-to-b from-primary-1 to-secondary-1 dark:from-primary-2 dark:to-secondary-2 bg-opacity-60 dark:bg-opacity-60 from-5% text-black z-20 transform ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >

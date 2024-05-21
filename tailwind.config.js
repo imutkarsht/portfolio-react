@@ -6,6 +6,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        subtleBounce: {
+          '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+          '40%': { transform: 'translateY(-10px)' },
+          '60%': { transform: 'translateY(-5px)' },
+        },
+      },
+      animation: {
+        subtleBounce: 'subtleBounce 2s infinite',
+      },
       colors: {
         primary: {
           1: "#F4F9F9",
@@ -45,6 +55,7 @@ module.exports = {
     },
   },
   variants: {
+      animation: ['responsive', 'hover'],
     extend: {},
   },
   plugins: [],
