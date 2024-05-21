@@ -13,13 +13,13 @@ const BodyLeft = () => {
           <ul className='flex gap-2 text-2xl mt-4 '>
             {socialLinks.map((item)=>{
               return(
-                <Link to={item.link} target='_blank'> 
-                  <li className='hover:cursor-pointer hover:text-accent-1 dark:hover:text-accent-2 transition-all' key={item.id}>  <item.icon /> </li>
+                <Link to={item.link} target='_blank' key={item.id}> 
+                  <li className='hover:cursor-pointer hover:text-accent-1 dark:hover:text-accent-2 transition-all' >  <item.icon /> </li>
                 </Link>
               )
             })}
           </ul>
-        <Link to={"https://drive.google.com/file/d/1EUCHEGq1WY4r0iZa21SWHPLYbD8xn0i6/view"} target='_blank'>
+        <Link to={"https://drive.google.com/file/d/15zKpjS5VnzI2ZAr3DU7b3mLa2d4_-3Y7/view"} target='_blank'>
          <Button title="Resume" />
         </Link>
         </div>

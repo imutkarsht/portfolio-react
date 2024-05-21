@@ -6,11 +6,11 @@ import Body from './components/home/Body';
 import Education from './components/Education-page/Education';
 import Skills from './components/Skill-page/Skills';
 import Projects from './components/Project-page/Projects';
-import Contact from './components/Contact';
+import Contact from './components/contact-page/Contact';
 import ErrorPage from './components/UI/ErrorPage';
 import "./index.css";
 import "./global.css";
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 const router = createBrowserRouter([
   {

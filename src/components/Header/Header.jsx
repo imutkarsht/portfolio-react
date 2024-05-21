@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { RiMenu2Fill } from 'react-icons/ri';
 import MenuItems from './MenuItems';
-import { useTheme } from '../../ThemeContext'; 
+import { useTheme } from '../../context/ThemeContext'; 
 import { CiLight } from "react-icons/ci";
 import { MdNightlight } from "react-icons/md";
 
