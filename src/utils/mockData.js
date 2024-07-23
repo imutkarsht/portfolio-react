@@ -155,11 +155,11 @@ export const projects = [
     {
         id: "4",
         name: "Note Keep App",
-        description: "Basic note taking app where you can create notes and delete them.",
+        description: "Full Stack note making App Built using NodeJs and Ejs",
         type: "minor",
-        imgSrc: "../../images/nka.jpg",
-        codeLink: "/notAvaliable",
-        demoLink: "https://note-keep-react.vercel.app/"
+        imgSrc: "../../images/nka.png",
+        codeLink: "https://github.com/imutkarsht/PRODIGY_FS_01",
+        demoLink: "https://prodigy-fs-01-k5np.onrender.com"
     },
     {
         id: "5",
