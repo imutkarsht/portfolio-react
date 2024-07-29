@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Layout from './components/Layout';
-import Body from './components/home/Body';
-import Education from './components/Education-page/Education';
-import Skills from './components/Skill-page/Skills';
-import Projects from './components/Project-page/Projects';
-import Contact from './components/contact-page/Contact';
 import ErrorPage from './components/UI/ErrorPage';
 import "./index.css";
 import "./global.css";
 import { ThemeProvider } from './context/ThemeContext';
+import ShimmerHome from './shimmers/ShimmerHome';
+import ShimmerEducation from './shimmers/ShimmerEducation';
+import ShimmerSkills from './shimmers/ShimmerSkills'
+import ProjectsShimmer from './shimmers/ProjectsShimmer';
+import ContactShimmer from './shimmers/ContactShimmer' ;
+
+const LazyHomeComponent = lazy(() => import('./Pages/Home'));
+const LazyEducationComponent = lazy(() => import('./Pages/Education'));
+const LazySkillsComponent = lazy(() => import('./Pages/Skills'));
+const LazyProjectsComponent = lazy(() => import('./Pages/Projects'));
+const LazyContactComponent = lazy(() => import('./Pages/Contact'));
 
 const router = createBrowserRouter([
   {
@@ -18,11 +24,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Body /> },
-      { path: "/education", element: <Education /> },
-      { path: "/skills", element: <Skills /> },
-      { path: "/projects", element: <Projects /> },
-      { path: "/contact", element: <Contact /> },
+      { index: true, element: <Suspense fallback={ <ShimmerHome /> }><LazyHomeComponent /> </Suspense> },
+      { path: "/education", element: <Suspense fallback={ <ShimmerEducation /> }><LazyEducationComponent /> </Suspense> },
+      { path: "/skills", element: <Suspense fallback={ <ShimmerSkills /> }><LazySkillsComponent /> </Suspense>  },
+      { path: "/projects", element: <Suspense fallback={ <ProjectsShimmer /> }><LazyProjectsComponent /> </Suspense> },
+      { path: "/contact", element: <Suspense fallback={ <ContactShimmer /> }><LazyContactComponent /> </Suspense>},
     ],
   },
 ]);

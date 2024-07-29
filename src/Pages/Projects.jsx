@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ProjectTop from './ProjectTop';
-import ProjectCard from './ProjectCard';
-import { projects } from '../../utils/mockData';
+import ProjectTop from '../components/Project-page/ProjectTop';
+import ProjectCard from '../components/Project-page/ProjectCard';
+import { projects } from '../utils/mockData';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');

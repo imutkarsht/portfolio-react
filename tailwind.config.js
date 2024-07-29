@@ -12,9 +12,14 @@ module.exports = {
           '40%': { transform: 'translateY(-10px)' },
           '60%': { transform: 'translateY(-5px)' },
         },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
       animation: {
         subtleBounce: 'subtleBounce 2s infinite',
+        shimmer: 'shimmer 1.5s infinite'
       },
       colors: {
         primary: {
@@ -28,10 +33,10 @@ module.exports = {
         accent: {
           1: '#2e7cfb',
           2: '#00eaff',
-          'low-contrast-1': '#b3d4ff',  // Low contrast version of accent color 1
-          'high-contrast-1': '#0056b3', // High contrast version of accent color 1
-          'low-contrast-2': '#a3faff',  // Low contrast version of accent color 2
-          'high-contrast-2': '#007a99', // High contrast version of accent color 2
+          'low-contrast-1': '#b3d4ff',  
+          'high-contrast-1': '#0056b3', 
+          'low-contrast-2': '#a3faff', 
+          'high-contrast-2': '#007a99', 
         },
         font: {
           1: '#ffffff',

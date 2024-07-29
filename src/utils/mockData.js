@@ -2,7 +2,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt  } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { SiC, SiCplusplus, SiSass } from "react-icons/si";
+import { SiCplusplus, SiMongodb, SiNodedotjs } from "react-icons/si";
 import { SiLeetcode } from 'react-icons/si';
 import { FaHackerrank } from "react-icons/fa";
 import { IoMail } from 'react-icons/io5';
@@ -65,17 +65,17 @@ export const TechStack = [
         accent:"blue"
     },
     {
-        name: "C",
+        name: "NodeJS",
         id: "9",
-        icon: SiC,
-        accent:"blue"
+        icon: SiNodedotjs,
+        accent : "green"
     },
     {
-        name: "SASS",
+        name: "mongoDB",
         id: "10",
-        icon: SiSass,
-        accent:"pink"
-    },
+        icon: SiMongodb,
+        accent: "green"
+    }
 ];
 
 export const ProbSolv = [

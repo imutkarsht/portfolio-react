@@ -1,6 +1,6 @@
 import React from 'react'
-import TechStack from './TechStack'
-import ProblemSolving from './ProblemSolving'
+import TechStack from '../components/Skill-page/TechStack'
+import ProblemSolving from '../components/Skill-page/ProblemSolving'
 
 const Skills = () => {
   return (

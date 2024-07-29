@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import HeadText from '../UI/HeadText';
-import { scriptURL } from '../../utils/constants';
-import InputField from './InputField';
-import TextAreaField from './TextAreaField';
-import SubmitButton from './SubmitButton';
+import HeadText from '../components/UI/HeadText';
+import { scriptURL } from '../utils/constants';
+import InputField from '../components/contact-page/InputField';
+import TextAreaField from '../components/contact-page/TextAreaField';
+import SubmitButton from '../components/contact-page/SubmitButton';
 
 const Contact = () => {
   const [name, setName] = useState('');

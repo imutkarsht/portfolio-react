@@ -1,6 +1,6 @@
 import React from 'react'
-import EducationCard from './EducationCard'
-import HeadText from '../UI/HeadText'
+import EducationCard from '../components/Education-page/EducationCard'
+import HeadText from '../components/UI/HeadText'
 
 const Education = () => {
   return (

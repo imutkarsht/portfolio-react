@@ -14,6 +14,8 @@ const TechStackItem = () => {
                 return 'hover-shadow-black';
             case 'pink':
                 return 'hover-shadow-pink';
+            case 'green': 
+                return 'hover-shadow-green';
             default:
                 return 'hover-shadow-white';
         }
