@@ -19,7 +19,7 @@ const BodyLeft = () => {
               )
             })}
           </ul>
-        <Link to={"https://drive.google.com/file/d/15zKpjS5VnzI2ZAr3DU7b3mLa2d4_-3Y7/view"} target='_blank'>
+        <Link to={"https://drive.google.com/file/d/1pLeNW7G5GUPZRF0rpYThv5kSTspcCN0b/view?usp=sharing"} target='_blank'>
          <Button title="Resume" />
         </Link>
         </div>

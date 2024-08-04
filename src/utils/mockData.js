@@ -127,12 +127,12 @@ export const socialLinks = [
 export const projects = [
     {
         id: "1",
-        name: "Amazon UI clone",
-        description: "Basic UI clone of Amazon website using HTML, SASS and JS.",
-        type: "minor",
-        imgSrc: "../../images/AUI.png",
-        codeLink: "https://github.com/imutkarsht/AMAZON-CLONE",
-        demoLink: "https://imutkarsht.github.io/AMAZON-CLONE/"
+        name: "Chatify",
+        description: "A real time chat application built using Nodejs, Socket.io, mongoDB and EJS",
+        type: "major",
+        imgSrc: "../../images/chat.jpg",
+        codeLink: "https://github.com/imutkarsht/PRODIGY_FS_02",
+        demoLink: "https://chatify-ut.onrender.com/"
     },
     {
         id: "2",
@@ -160,14 +160,5 @@ export const projects = [
         imgSrc: "../../images/nka.png",
         codeLink: "https://github.com/imutkarsht/PRODIGY_FS_01",
         demoLink: "https://prodigy-fs-01-k5np.onrender.com"
-    },
-    {
-        id: "5",
-        name: "Food App",
-        description: "Ongoing food app project using React JS and Swiggy API.",
-        type: "major",
-        imgSrc: "../../images/fa.jpg",
-        codeLink: "/notAvaliable",
-        demoLink: "https://imutkarsht-food-app.vercel.app/"
     },
 ]
