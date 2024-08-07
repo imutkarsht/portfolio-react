@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HeadText from '../components/UI/HeadText';
-import { scriptURL } from '../utils/constants';
+import { BACKEND_API } from '../utils/constants';
 import InputField from '../components/contact-page/InputField';
 import TextAreaField from '../components/contact-page/TextAreaField';
 import SubmitButton from '../components/contact-page/SubmitButton';
@@ -13,28 +13,44 @@ const Contact = () => {
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  const clearMessages = () => {
+    setSuccessMessage('');
+    setErrorMessage('');
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-
-    const formData = new FormData();
-    formData.append('Name', name);
-    formData.append('Email', email);
-    formData.append('Message', message);
+    
+    const payload = {
+      name: name.trim(),
+      email: email.trim(),
+      message: message.trim(),
+    };
 
     try {
-      const response = await fetch(scriptURL, { method: 'POST', body: formData });
-      console.log(response);
+      const response = await fetch(`${BACKEND_API}`, { 
+        method: 'POST', 
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+      
       if (response.ok) {
-        setSuccessMessage('Thank you! Your response was recorded successfully.');
+        setSuccessMessage(result.message);
         setName('');
         setEmail('');
         setMessage('');
+        setTimeout(clearMessages, 5000); 
       } else {
-        throw new Error(`Server responded with status ${response.status}`);
+        throw new Error(`Server responded with status ${response.status}: ${result.message}`);
       }
     } catch (error) {
-      setErrorMessage('Unknown Error! Response is not sent....');
+      setErrorMessage(error.message || 'Unknown Error! Response is not sent....');
+      setTimeout(clearMessages, 5000);
     } finally {
       setSubmitting(false);
     }
@@ -49,7 +65,7 @@ const Contact = () => {
           className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2 p-6 rounded-lg shadow-lg'
         >
           <InputField 
-            label="Name" 
+            label="name" 
             type="text" 
             name="name" 
             value={name} 
@@ -57,7 +73,7 @@ const Contact = () => {
             placeholder="Enter your name" 
           />
           <InputField 
-            label="Email" 
+            label="email" 
             type="email" 
             name="email" 
             value={email} 
@@ -65,7 +81,7 @@ const Contact = () => {
             placeholder="Enter your email" 
           />
           <TextAreaField 
-            label="Message" 
+            label="message" 
             name="message" 
             value={message} 
             onChange={(e) => setMessage(e.target.value)} 
