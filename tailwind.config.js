@@ -6,7 +6,9 @@ module.exports = {
   ],
   safelist:[
     'bg-green-500',
-    'bg-orange-500'
+    'bg-orange-500',
+    'text-green-500',
+    'text-orange-500'
   ],
   theme: {
     extend: {
