@@ -4,24 +4,7 @@ import { Link } from 'react-router-dom';
 import { ProbSolv } from '../../utils/mockData';
 
 const ProblemSolvingItem = () => {
-    const [totalSolved, setTotalSolved] = useState(0);
-
-    useEffect(() => {
-        getLeetData();
-    }, []);
-
-    async function getLeetData() {
-        try {
-            const data = await fetch(LEET_URL);
-            const json = await data.json();
-            setTotalSolved(json.totalSolved);
-        } catch (error) {
-            console.log("Error in Fetching Data...");
-        }
-    }
-
-    ProbSolv[0].data[0] = `Did ${totalSolved} questions`;
-
+    
     const getShadowClass = (accent) => {
         switch (accent.toLowerCase()) {
             case 'orange':

@@ -80,14 +80,6 @@ export const TechStack = [
 
 export const ProbSolv = [
     {
-        id: "1",
-        name: "Leetcode",
-        icon: SiLeetcode,
-        data: ["","has over 100 days streak", "Uses C++ as main language"],
-        link:"https://www.leetcode.com/imutkarsht",
-        accent: "orange"
-    },
-    {
         id: "2",
         name: "Hackerrank",
         icon: FaHackerrank,
