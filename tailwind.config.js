@@ -4,6 +4,10 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  safelist:[
+    'bg-green-500',
+    'bg-orange-500'
+  ],
   theme: {
     extend: {
       keyframes: {
