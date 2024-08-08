@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch(`${BACKEND_API}`, { 
+      const response = await fetch(`${BACKEND_API}/api/feedback`, { 
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
@@ -91,6 +91,7 @@ const Contact = () => {
           {successMessage && <p className="text-green-600">{successMessage}</p>}
           {errorMessage && <p className="text-red-600">{errorMessage}</p>}
         </form>
+        <h3 className='dark:text-zinc-400 text-black text-xs font-semibold mt-1 p-4'><span className='text-base font-bold text-accent-1 dark:text-accent-2'>*</span>server goes to downtime after inactivity so if your message is stuck at submitting please wait for a minute or <a href= {`${BACKEND_API}`}  className='text-accent-1 dark:text-accent-2 underline'>click here</a></h3>
       </div>
     </div>
   );

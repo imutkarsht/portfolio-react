@@ -12,7 +12,7 @@ const TextAreaField = ({ label, name, value, onChange, placeholder }) => (
       rows="4" 
       required
       placeholder={placeholder} 
-      className='border-none outline-none rounded-md p-3 text-lg w-full capitalize  dark:text-content-main-text-2 text-content-main-text-1 dark:bg-secondary-2 bg-gray-white placeholder-black dark:placeholder-white bg-opacity-75 focus:ring-4 focus:bg-gray-50 focus:dark:text-white focustext-black focus:dark:bg-gray-800 ring-accent-1 dark:ring-accent-2'
+      className='border-none outline-none rounded-md p-3 text-lg w-full   dark:text-content-main-text-2 text-content-main-text-1 dark:bg-secondary-2 bg-gray-white placeholder-black dark:placeholder-white bg-opacity-75 focus:ring-4 focus:bg-gray-50 focus:dark:text-white focustext-black focus:dark:bg-gray-800 ring-accent-1 dark:ring-accent-2'
     ></textarea>
   </div>
 );
