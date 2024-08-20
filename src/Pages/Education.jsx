@@ -4,9 +4,9 @@ import HeadText from '../components/UI/HeadText'
 
 const Education = () => {
   return (
-    <div className='flex flex-col mt-5 gap-10'>
+    <div className='flex flex-col gap-10 mt-5'>
         <HeadText heading="Education" />
-        <div className='flex flex-col flex-wrap gap-1 w-full items-center justify-center'>
+        <div className='flex flex-col flex-wrap items-center justify-center w-full gap-1'>
           <EducationCard/>
         </div>
     </div>

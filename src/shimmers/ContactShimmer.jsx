@@ -4,16 +4,16 @@ const ContactShimmer = () => {
   return (
     <div className="flex items-center justify-center py-12">
       <div className="w-full max-w-2xl">
-        <div className="h-8 w-48 bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-6"></div>
-        <div className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2 p-6 rounded-lg shadow-lg'>
-          <div className="h-6 w-32 bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-10 w-full bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-6 w-32 bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-10 w-full bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-6 w-32 bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-32 w-full bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-10 w-24 bg-gray-300 dark:bg-gray-700 rounded animate-pulse mb-4"></div>
-          <div className="h-6 w-48 bg-gray-300 dark:bg-gray-700 rounded animate-pulse"></div>
+        <div className="w-48 h-8 mb-6 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+        <div className='flex flex-col items-center gap-6 p-6 mt-10 bg-opacity-50 rounded-lg shadow-lg bg-content-1 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2'>
+          <div className="w-32 h-6 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-full h-10 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-32 h-6 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-full h-10 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-32 h-6 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-full h-32 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-24 h-10 mb-4 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
+          <div className="w-48 h-6 bg-gray-300 rounded dark:bg-gray-700 animate-pulse"></div>
         </div>
       </div>
     </div>

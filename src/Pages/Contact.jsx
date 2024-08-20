@@ -62,7 +62,7 @@ const Contact = () => {
         <HeadText heading="Contact" />
         <form 
           onSubmit={handleSubmit}
-          className='flex flex-col mt-10 gap-6 items-center bg-content-1 bg-opacity-50 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2 p-6 rounded-lg shadow-lg'
+          className='flex flex-col items-center gap-6 p-6 mt-10 bg-opacity-50 rounded-lg shadow-lg bg-content-1 dark:bg-opacity-20 shadow-gray-400 dark:shadow-gray-700 dark:bg-content-2'
         >
           <InputField 
             label="name" 
@@ -91,7 +91,7 @@ const Contact = () => {
           {successMessage && <p className="text-green-600">{successMessage}</p>}
           {errorMessage && <p className="text-red-600">{errorMessage}</p>}
         </form>
-        <h3 className='dark:text-zinc-400 text-black text-xs font-semibold mt-1 p-4'><span className='text-base font-bold text-accent-1 dark:text-accent-2'>*</span>server goes to downtime after inactivity so if your message is stuck at submitting please wait for a minute or <a href= {`${BACKEND_API}/reload`}  className='text-accent-1 dark:text-accent-2 underline'>click here</a></h3>
+        <h3 className='p-4 mt-1 text-xs font-semibold text-black dark:text-zinc-400'><span className='text-base font-bold text-accent-1 dark:text-accent-2'>*</span>server goes to downtime after inactivity so if your message is stuck at submitting please wait for a minute or <a href= {`${BACKEND_API}/reload`}  className='underline text-accent-1 dark:text-accent-2'>click here</a></h3>
       </div>
     </div>
   );

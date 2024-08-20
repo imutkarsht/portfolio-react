@@ -14,23 +14,23 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-2 py-2 dark:text-white text-black">
-        <h1 className="md:text-3xl text-2xl uppercase font-semibold">
+      <div className="flex items-center justify-between px-2 py-2 text-black dark:text-white">
+        <h1 className="text-2xl font-semibold uppercase md:text-3xl">
           Utkarsh <span className='text-accent-1 dark:text-accent-2'>Tiwari</span>
         </h1>
             <button
               onClick={toggleTheme}
-              className="text-4xl ml-auto mr-4"
+              className="ml-auto mr-4 text-4xl"
             >
               {darkMode ? <CiLight /> : <MdNightlight /> }
             </button>
 
-        <div className="md:hidden flex items-center gap-4">
+        <div className="flex items-center gap-4 md:hidden">
           <div onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes size={40} /> : <RiMenu2Fill size={40} />}
           </div>
         </div>
-        <ul className="hidden md:flex items-center justify-center gap-5 text-xl">
+        <ul className="items-center justify-center hidden gap-5 text-xl md:flex">
           <MenuItems currentPath={location.pathname} />
         </ul>
       </div>

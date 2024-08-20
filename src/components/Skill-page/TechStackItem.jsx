@@ -22,7 +22,7 @@ const TechStackItem = () => {
     };
 
     return (
-        <div className='flex flex-wrap justify-center md:gap-0 gap-1'>
+        <div className='flex flex-wrap justify-center gap-1 md:gap-0'>
             {TechStack.map((item) => {
                 const IconComponent = item.icon;
                 const shadowClass = getShadowClass(item.accent);
@@ -32,9 +32,9 @@ const TechStackItem = () => {
                     key={item.id}
                     className={`flex flex-col hover:animate-subtleBounce md:m-4 m-1 border bg-opacity-30 dark:bg-opacity-50 border-content-main-text-1 dark:border-content-main-text-2 rounded-lg transition-all ease-in-out duration-150 cursor-pointer items-center justify-center dark:bg-content-2 bg-content-1 hover:shadow-lg hover:dark:shadow-content-main-text-2 hover:shadow-content-main-text-1 ${shadowClass}`}
                   >
-                    <IconComponent size={80} className='dark:text-white p-2 pb-1' />
+                    <IconComponent size={80} className='p-2 pb-1 dark:text-white' />
                     <div className='w-full h-0.5 dark:bg-gray-300 bg-gray-900'></div>
-                    <h3 className='dark:text-white text-center font-semibold text-lg pb-1 px-1'>{item.name}</h3>
+                    <h3 className='px-1 pb-1 text-lg font-semibold text-center dark:text-white'>{item.name}</h3>
                   </div>
                 );
             })}

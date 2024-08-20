@@ -85,7 +85,7 @@ const LeetCodeStatsChart = () => {
   };
 
   return (
-    <div className='flex justify-between items-center rounded-md gap-4 dark:bg-primary-2 bg-gray-300 px-2 py-0 border dark:border-font-1 border-black'>
+    <div className='flex items-center justify-between gap-4 px-2 py-0 bg-gray-300 border border-black rounded-md dark:bg-primary-2 dark:border-font-1'>
       <DoughnutChart
         loading={loading}
         data={data}

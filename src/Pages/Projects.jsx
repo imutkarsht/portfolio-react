@@ -13,7 +13,7 @@ const Projects = () => {
   const filteredProjects = filter === 'All' ? projects : projects.filter(project => project.type.toLowerCase() === filter.toLowerCase());
 
   return (
-    <div className=' mb-2'>
+    <div className='mb-2 '>
       <div className='flex flex-col items-center justify-center p-4' style={{ marginLeft: "5%", marginRight: "5%" }}>
         <ProjectTop handleFilterChange={handleFilterChange} />
         <div>

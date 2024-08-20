@@ -87,9 +87,9 @@ const LeetCodeSubmissionsChart = () => {
     };
 
     return (
-        <div className='flex justify-between items-center rounded-md gap-4 dark:bg-primary-2 bg-gray-300 px-2 py-2 pb-0 border dark:border-font-1 border-black'>
+        <div className='flex items-center justify-between gap-4 px-2 py-2 pb-0 bg-gray-300 border border-black rounded-md dark:bg-primary-2 dark:border-font-1'>
             {loading ? (
-                <div className='flex h-40 w-60 justify-between items-center rounded-md gap-4 dark:bg-gray-600 bg-gray-200 px-2 py-2 animate-pulse'></div>
+                <div className='flex items-center justify-between h-40 gap-4 px-2 py-2 bg-gray-200 rounded-md w-60 dark:bg-gray-600 animate-pulse'></div>
             ) : chartData ? (
                 <Bar data={chartData} options={options} />
             ) : (
