@@ -14,8 +14,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-2 py-2 text-black dark:text-white">
-        <h1 className="text-2xl font-semibold uppercase md:text-3xl">
+      <div className="flex items-center justify-between px-2 py-2 text-black lg:px-24 dark:text-white">
+        <h1 className="text-2xl font-semibold uppercase lg:text-3xl md:text-2xl">
           Utkarsh <span className='text-accent-1 dark:text-accent-2'>Tiwari</span>
         </h1>
             <button
@@ -36,11 +36,11 @@ const Header = () => {
       </div>
 
       <div
-        className={`fixed top-14 right-0 h-[calc(100%-3.5rem)] w-3/6 bg-gradient-to-b from-primary-1 to-secondary-1 dark:from-primary-2 dark:to-secondary-2 bg-opacity-60 dark:bg-opacity-60 from-5% text-black z-20 transform ${
+        className={`fixed top-14 right-0 h-[calc(100%-3.5rem)] md:w-3/6 w-1/3  bg-gradient-to-b from-primary-1 to-secondary-1 dark:from-primary-2 dark:to-secondary-2 bg-opacity-60 dark:bg-opacity-60 from-5% text-black z-20 transform ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        <ul className="flex flex-col items-end justify-center gap-5 p-5 text-2xl">
+        <ul className="flex flex-col items-end justify-center gap-5 p-5 text-xl md:text-2xl">
           
           <MenuItems onClick={() => setMenuOpen(false)} currentPath={location.pathname} />
         </ul>

@@ -6,6 +6,8 @@ import TextAreaField from "../components/contact-page/TextAreaField";
 import SubmitButton from "../components/contact-page/SubmitButton";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+import LoadingPopup from '../components/UI/LoadingPopup'
 
 const Contact = () => {
    const [name, setName] = useState("");
@@ -14,6 +16,9 @@ const Contact = () => {
    const [submitting, setSubmitting] = useState(false);
    const [successMessage, setSuccessMessage] = useState("");
    const [errorMessage, setErrorMessage] = useState("");
+   const [loading, setLoading] = useState(false);  // Initialize as false
+   const [res, setResponse] = useState("");
+   const navigate = useNavigate();
 
    const clearMessages = () => {
       setSuccessMessage("");
@@ -47,10 +52,11 @@ const Contact = () => {
             setEmail("");
             setMessage("");
             toast.success(result.message, {
-               className: "bg-green-500 text-white dark:bg-slate-900 dark:text-gray-100",
+               className:
+                  "bg-green-500 text-white dark:bg-slate-900 dark:text-gray-100",
                bodyClassName: "text-sm",
                progressClassName: "bg-white dark:bg-green-500",
-               position:"top-right"
+               position: "top-center",
             });
             setTimeout(clearMessages, 5000);
          } else {
@@ -59,17 +65,54 @@ const Contact = () => {
             );
          }
       } catch (error) {
-         const errorMessage = error.message || "Unknown Error! Response is not sent....";
+         const errorMessage =
+            error.message || "Unknown Error! Response is not sent....";
          setErrorMessage(errorMessage);
          toast.error(errorMessage, {
-            className: "bg-red-500 text-white dark:bg-slate-800 dark:text-gray-100",
+            className:
+               "bg-red-500 text-white dark:bg-slate-800 dark:text-gray-100",
             bodyClassName: "text-sm",
             progressClassName: "bg-white dark:bg-red-500",
-            position:"top-right",
+            position: "top-center",
          });
          setTimeout(clearMessages, 5000);
       } finally {
          setSubmitting(false);
+      }
+   };
+
+   const handleRestartServer = async () => {
+      setLoading(true);  
+      try {
+         const response = await fetch(`${BACKEND_API}/reload`, {
+            method: "GET",
+         });
+
+         if (!response.ok) {
+            throw new Error("Failed to restart the server.");
+         }
+
+         const data = await response.json();
+         
+         setResponse(data.message);
+         toast.success(res, {
+            className:
+               "bg-green-500 text-white dark:bg-slate-900 dark:text-gray-100",
+            bodyClassName: "text-sm",
+            progressClassName: "bg-white dark:bg-green-500",
+            position: "top-center",
+         });
+         navigate("/contact");
+      } catch (error) {
+         toast.error(error.message || "Something went wrong", {
+            className:
+               "bg-red-500 text-white dark:bg-slate-800 dark:text-gray-100",
+            bodyClassName: "text-sm",
+            progressClassName: "bg-white dark:bg-red-500",
+            position: "top-center",
+         });
+      } finally {
+         setLoading(false);  // Hide loading popup
       }
    };
 
@@ -133,14 +176,15 @@ const Contact = () => {
                </span>
                server goes to downtime after inactivity so if your message is
                stuck at submitting please wait for a minute or{" "}
-               <a
-                  href={`${BACKEND_API}/reload`}
+               <button
+                  onClick={handleRestartServer}
                   className="underline text-accent-1 dark:text-accent-2"
                >
                   click here
-               </a>
+               </button>
             </h3>
          </div>
+         <LoadingPopup loading={loading} /> {/* Add the LoadingPopup component */}
       </div>
    );
 };
