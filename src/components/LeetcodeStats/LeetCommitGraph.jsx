@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from 'chart.js';
-import { format, parse } from 'date-fns'; // Importing date-fns
+import { format } from 'date-fns'; 
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 

@@ -3,7 +3,6 @@ import { IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { SiCplusplus, SiMongodb, SiNodedotjs } from "react-icons/si";
-import { SiLeetcode } from 'react-icons/si';
 import { FaHackerrank } from "react-icons/fa";
 import { IoMail } from 'react-icons/io5';
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
