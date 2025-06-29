@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://utkarsh-tiwari-dev.vercel.app/:1",
+      "permanent": true
+    }
+  ]
+}
